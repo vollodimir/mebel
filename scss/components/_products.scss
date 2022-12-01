@@ -1,0 +1,112 @@
+@import '../variables';
+
+.products {
+  &__body {
+    padding-top: 95px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__details {
+    margin-top: 70px;
+    //min-height: 336px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 41px;
+    color: #2f2f2f;
+    margin-bottom: 27px;
+  }
+  &__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #6a6a6a;
+    margin-bottom: 33px;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.product {
+  width: 293px;
+  padding-top: 66px; //vysota knopky i margin
+  color: #2f2f2f;
+  text-align: center;
+  position: relative;
+
+  &:hover {
+    padding-top: 0;
+  }
+
+  &:hover &__shadow {
+    transition: 0.7s;
+    width: 100%;
+    height: 307px;
+  }
+
+  &__shadow {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    bottom: 17px;
+    background: rgba(53, 115, 110, 0.1);
+    border-radius: 20px;
+    transition: 0.7s;
+  }
+
+  &__img {
+    height: 261px;
+    margin-bottom: 46px;
+    img {
+      height: 100%;
+      object-fit: cover;
+      position: relative;
+      //z-index: 2;
+    }
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+  }
+  &__price {
+    font-weight: 700;
+    font-size: 18px;
+    position: relative;
+  }
+
+  &:hover &__btn {
+    display: block;
+    // opacity: 1;
+    margin-top: 31px;
+    transition: 0.7s;
+    position: relative;
+  }
+
+  &__btn {
+    display: none;
+
+    a {
+      display: block;
+      margin: 0 auto;
+      width: 35px;
+      height: 35px;
+      background: #2f2f2f;
+      border-radius: 50%;
+      box-shadow: 0px 7px 15px -1px rgba(0, 0, 0, 0.4);
+      font-size: 21px;
+      font-weight: 400;
+      color: #fff;
+      line-height: 31px;
+    }
+  }
+}

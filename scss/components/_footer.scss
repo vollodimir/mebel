@@ -1,0 +1,82 @@
+@import '../variables';
+
+.footer {
+  background: #fff;
+  &__body {
+    padding-top: 16px;
+    padding-bottom: 93px;
+  }
+  &__logo {
+    padding-bottom: 17px;
+    a {
+      color: #000;
+    }
+  }
+  &__row {
+    padding-bottom: 43px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__text {
+    max-width: 360px;
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-wrap: wrap;
+  }
+  &__list {
+    line-height: 28px;
+    a {
+      color: #6a6a6a;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__socials {
+    height: 43px;
+    margin-bottom: 68px;
+    a {
+      opacity: 0.6;
+      display: inline-block;
+      margin-right: 11px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        opacity: 0.4;
+      }
+      img {
+        width: 41px;
+        height: 41px;
+      }
+    }
+  }
+  &__copyright {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      font-weight: bold;
+      color: #6a6a6a;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__copyright-text {
+    flex-grow: 1;
+    font-size: 13px;
+  }
+  &__privacy {
+    flex-shrink: 0;
+    a {
+      display: inline-block;
+      padding-left: 42px;
+    }
+  }
+}

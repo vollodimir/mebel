@@ -1,0 +1,225 @@
+@media only screen and (max-width: 1440px) {
+  .design {
+    &__body {
+      background-position: top left;
+    }
+  }
+}
+
+@media only screen and (max-width: 1165px) {
+  .products {
+    &__body {
+      flex-wrap: wrap;
+    }
+
+    &__details {
+      margin: 0 auto;
+      width: 75%;
+    }
+    &__items {
+      width: 100%;
+    }
+  }
+
+  .why-us {
+    &__left {
+      padding-top: 0;
+      margin-right: 0;
+    }
+    &__description {
+      padding-bottom: 27px;
+    }
+    &__advantages {
+      padding-right: 60px;
+    }
+  }
+  .articles {
+    &__body {
+      padding-top: 50px;
+      padding-bottom: 0;
+      justify-content: space-evenly;
+    }
+  }
+  .article {
+    margin-bottom: 45px;
+  }
+
+  .blog {
+    &__posts {
+      justify-content: space-around;
+    }
+  }
+  .post {
+    &__body {
+      margin: 30px;
+    }
+    &__img {
+      margin-bottom: 14px;
+    }
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .why-us {
+    &__body {
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+    &__left {
+      max-width: 75%;
+    }
+    &__advantages {
+      padding-right: 0;
+    }
+
+    &__right {
+      width: 100%;
+      padding-right: 55px;
+    }
+  }
+  .design {
+    &__row {
+      flex-wrap: wrap;
+    }
+    &__text {
+      width: 75%;
+      margin: 0 auto;
+      padding-bottom: 30px;
+    }
+    &__images {
+      order: 2;
+      padding: 0 55px;
+      width: 100%;
+    }
+  }
+  .subscribe {
+    &__form {
+      width: 50%;
+      input {
+        margin-bottom: 20px;
+      }
+      button {
+        display: block;
+      }
+    }
+  }
+
+  .footer {
+    &__row {
+      flex-direction: column;
+    }
+    &__text {
+      max-width: 100%;
+      padding-bottom: 17px;
+    }
+    &__socials {
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    &__navigation {
+      padding: 0px;
+    }
+
+    &__logo {
+      margin-left: 50px;
+    }
+    &__input,
+    &__lines {
+      display: block;
+    }
+
+    &__input:checked ~ &__all-menu {
+      opacity: 1;
+      width: 100%;
+    }
+
+    &__menu {
+      display: flex;
+      flex-direction: column;
+      //justify-content: space-between;
+      align-items: center;
+      font-size: 20px;
+      li {
+        margin: 0;
+
+        a,
+        a:hover {
+          &::before,
+          &::after {
+            content: '';
+            width: 0px;
+            height: 0px;
+          }
+        }
+      }
+    }
+
+    &__all-menu {
+      display: block;
+      padding: 10px 0;
+      border-top: 1px solid rgba(#f9bf29, 0.2);
+      position: absolute;
+      top: 80px;
+      width: 0%;
+      opacity: 0;
+      overflow: hidden;
+      text-align: center;
+      background: rgba(#3b5d50, 0.9);
+      transition: 0.9s;
+    }
+
+    &__user-btn {
+      padding-top: 25px;
+    }
+  }
+
+  .subscribe {
+    &__form {
+      width: 70%;
+    }
+    &__img {
+      width: 50%;
+    }
+  }
+
+  .footer {
+    &__copyright {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &__copyright-text {
+      padding-bottom: 17px;
+    }
+
+    &__privacy {
+      a {
+        &:first-child {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .post {
+    &__body {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  .footer {
+    &__menu {
+      justify-content: space-between;
+    }
+    &__list {
+      flex: 0 1 40%;
+    }
+  }
+}

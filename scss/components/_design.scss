@@ -1,0 +1,56 @@
+@import '../variables';
+
+.design {
+  &__body {
+    margin-top: 53px;
+    margin-bottom: 83px;
+    padding-top: 54px;
+    min-height: 560px;
+    background: url('../img/design_bg.svg') no-repeat top left 68px;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__images {
+    padding-right: 15px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 41px;
+    color: #2f2f2f;
+    margin-bottom: 28px;
+  }
+  &__description {
+    margin-bottom: 31px;
+  }
+
+  &__list,
+  &__list li {
+    list-style: circle;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li {
+      margin-left: 21px;
+      width: 194px;
+      margin-bottom: 24px;
+    }
+  }
+}
