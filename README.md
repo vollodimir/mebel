@@ -1,8 +1,8 @@
-# mebel
+# Mebel
 
 HTML templtate, landing page
 
-Hosted: <a href="http://mebel.pl.vn.ua">mebel.pl.vn.ua</a>
+Hosted: <a href="http://pl.vn.ua/mebel/">pl.vn.ua/mebel</a>
 
 ## In future add:
 
