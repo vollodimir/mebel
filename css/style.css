@@ -492,7 +492,7 @@
 .products__items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .product {
@@ -659,9 +659,19 @@
   transform: rotate(180deg);
 }
 .testimonials__dots {
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
   text-align: center;
 }
-.testimonials__dots span {
+.testimonials__dots button {
+  display: none;
+}
+.testimonials__dots li {
   display: inline-block;
   border-radius: 50%;
   margin: 6px;
@@ -669,11 +679,11 @@
   height: 7px;
   background-color: #d9d9d9;
 }
-.testimonials__dots span:hover {
+.testimonials__dots li:hover {
   background-color: #385d50;
   border: 1px solid #000;
 }
-.testimonials__dots--active {
+.testimonials__dots .slick-active {
   background-color: #385d50 !important;
 }
 
@@ -682,6 +692,7 @@
   margin-bottom: 43px;
 }
 .testimonial__text {
+  margin: 0 auto;
   max-width: 759px;
   padding-bottom: 43px;
   font-weight: 400;
@@ -702,6 +713,7 @@
   margin-bottom: 13px;
 }
 .testimonial__foto img {
+  margin: 0 auto;
   width: 77px;
   height: 77px;
   border-radius: 50%;
@@ -819,13 +831,9 @@
   .articles__body {
     padding-top: 50px;
     padding-bottom: 0;
-    justify-content: space-evenly;
   }
   .article {
     margin-bottom: 45px;
-  }
-  .blog__posts {
-    justify-content: space-around;
   }
   .post__body {
     margin: 30px;
@@ -945,6 +953,11 @@
     padding-left: 0;
   }
 }
+@media only screen and (max-width: 640px) {
+  .products__items {
+    justify-content: space-around;
+  }
+}
 @media only screen and (max-width: 580px) {
   .post__body {
     width: 100%;
@@ -972,6 +985,7 @@ body {
 
 a {
   text-decoration: none;
+  transition: 0.5s;
 }
 
 ul,
@@ -1016,4 +1030,33 @@ li {
 }
 .btn:hover {
   opacity: 0.8;
+}
+
+.go-top {
+  display: none;
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+  width: 3em;
+  height: 3em;
+  background-color: rgba(59, 93, 80, 0.4);
+  border-radius: 5px;
+  transition: 0.3s;
+  z-index: 350;
+}
+.go-top:hover {
+  background-color: rgba(59, 93, 80, 0.9);
+}
+.go-top a {
+  font-size: 2em;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../img/icon/go-top.svg") no-repeat center center;
+  opacity: 0.4;
+  transition: 0.3s;
+}
+.go-top a:hover {
+  opacity: 0.8;
+  background: url("../img/icon/go-top.svg") no-repeat center 46%;
 }/*# sourceMappingURL=style.css.map */

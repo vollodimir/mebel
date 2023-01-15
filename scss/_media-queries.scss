@@ -37,18 +37,12 @@
     &__body {
       padding-top: 50px;
       padding-bottom: 0;
-      justify-content: space-evenly;
     }
   }
   .article {
     margin-bottom: 45px;
   }
 
-  .blog {
-    &__posts {
-      justify-content: space-around;
-    }
-  }
   .post {
     &__body {
       margin: 30px;
@@ -202,6 +196,14 @@
           padding-left: 0;
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .products {
+    &__items {
+      justify-content: space-around;
     }
   }
 }
